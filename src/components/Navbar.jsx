@@ -1,4 +1,5 @@
-import { Badge, Search, ShoppingCartOutlined } from "@mui/icons-material";
+import { Search, ShoppingCartOutlined } from "@mui/icons-material";
+import Badge from "@mui/material/Badge";
 import React from "react";
 import styled from "styled-components";
 
@@ -34,6 +35,7 @@ const Navbar = () => {
     `;
     const Language = styled.span`
         font-size: 14px;
+        font-weight: bold;
         cursor: pointer;
     `;
 
@@ -55,6 +57,7 @@ const Navbar = () => {
 
     const MenuItem = styled.div`
         font-size: 14px;
+        font-weight: bold;
         margin-left: 25px;
     `;
 
@@ -76,7 +79,7 @@ const Navbar = () => {
                     <MenuItem>SIGN IN</MenuItem>
                     <MenuItem>
                         <Badge badgeContent={5} color="primary">
-                            <ShoppingCartOutlined/>
+                            <ShoppingCartOutlined />
                         </Badge>
                     </MenuItem>
                 </Right>
