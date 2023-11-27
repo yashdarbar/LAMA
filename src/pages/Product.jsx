@@ -5,12 +5,14 @@ import Announcements from "../components/Announcements";
 import Footer from "../components/Footer";
 import styled from "styled-components";
 import { Add, Remove } from "@mui/icons-material";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
     display: flex;
     padding: 50px;
+    ${mobile({flexDirection: "column", padding: "0px"})};
 `;
 
 const ImgeContainer = styled.div`
@@ -21,6 +23,7 @@ const Image = styled.img`
     width: 90%;
     height: 90vh;
     object-fit: cover;
+    ${mobile({height: "50vh", marginLeft: "20px"})}
 `;
 
 const InfoContainer = styled.div`
@@ -52,6 +55,7 @@ const FilterContainer = styled.div`
 const Filter = styled.div`
     display: flex;
     align-items: center;
+    ${mobile({margin: "0px 10px"})}
 `;
 
 const FilterTitle = styled.span`
@@ -79,6 +83,7 @@ const AddContainer = styled.div`
     display: flex;
     justify-content: space-between;
     width: 50%;
+    ${mobile({width: "100%"})}
 `;
 
 const AccountContainer = styled.div`
