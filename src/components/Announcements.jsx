@@ -10,7 +10,7 @@ const Container = styled.div`
     justify-content:center;
     font-size:14px;
     font-weight:500;
-    `
+    `;
 
 const Announcements = () => {
     return <Container>Super Deal! Free Shipping on Orders Over $50</Container>;

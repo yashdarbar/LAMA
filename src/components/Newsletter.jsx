@@ -1,6 +1,7 @@
 import { Send } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     height:50vh;
@@ -8,11 +9,13 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 `;
 
 const Title = styled.h1`
     font-size: 70px;
     margin-bottom:20px;
+    ${mobile({fontSize:"50px"})}
 `;
 
 const Desc = styled.div`
@@ -20,6 +23,8 @@ const Desc = styled.div`
     margin-bottom: 30px;
     font-weight: bold;
     letter-spacing: 0.5px;
+    ${mobile({fontSize:"16px",justifyContent: "center"})}
+
 `;
 
 const ImageContainer = styled.div`

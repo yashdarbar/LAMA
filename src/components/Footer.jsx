@@ -1,10 +1,12 @@
 import { Facebook, Instagram, Mail, Phone, Room, Twitter } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     display: flex;
     padding: 20px;
+    ${mobile({flexDirection: "column"})}
 `;
 
 const Left = styled.div`
@@ -38,6 +40,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({display: "none"})};
 `;
 const CenterTitle = styled.h3`
 margin-bottom:30px;
@@ -56,11 +59,11 @@ font-weight: 800;
 width: 50%;
 margin-bottom: 20px;`;
 
-
 const Right = styled.div`
     flex: 1;
     padding: 20px;
     margin-right: 30px;
+    ${mobile({backgroundColor: "lightgray"})}
 `;
 const ContactItem = styled.div`
     font-weight: 700;

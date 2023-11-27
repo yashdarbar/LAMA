@@ -1,5 +1,6 @@
 import { Padding } from "@mui/icons-material";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     height: 70vh;
@@ -7,6 +8,7 @@ const Container = styled.div`
     margin: 3px;
     display: flex;
     position: relative;
+    ${mobile({height:"30vh", width:"100%"})}
 `;
 
 const Image = styled.img`
