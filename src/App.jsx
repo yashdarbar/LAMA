@@ -6,11 +6,12 @@ import Product from "./pages/Product";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
+import About from "./pages/About";
 
 const App = () => {
     return (
         <div>
-          <Cart />
+            <About />
         </div>
     );
 };

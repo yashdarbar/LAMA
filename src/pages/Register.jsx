@@ -49,7 +49,7 @@ const Button = styled.button`
 const Register = () => {
     return (
         <Container>
-            <Wrapper>
+            {/* <Wrapper>
                 <Title>Create An Account</Title>
                 <Form>
                     <Input placeholder="name"></Input>
@@ -64,7 +64,8 @@ const Register = () => {
                     personal data in accordance with the <b>Privacy Policy</b>
                 </Agreement>
                 <Button>Create</Button>
-            </Wrapper>
+            </Wrapper> */}
+            
         </Container>
     );
 };
